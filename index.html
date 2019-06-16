@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Css Layouts</title>
+  <meta name="author" content="Mark Kuczmarski">
+  <style>
+    .stack > * + * {
+      margin-top: 1rem;
+    }
+    .element {
+      background: blue;
+      color: white;
+    }
+    .element:hover {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style='text-align: center;'>CSS Layouts</h1>
+  <div class='stack' width='100%' style='text-align: center;'>
+    <div class='element'>
+      <a href='./stack.html' >Stack</a>
+    </div>
+  </div>
+</body>
+</html>

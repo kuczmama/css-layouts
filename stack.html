@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Stack</title>
+  <meta name="author" content="SitePoint">
+  <style>
+    .stack > * + * {
+      margin-top: 1rem;
+      background-color: blue;
+      color: white;
+    }
+  </style>
+  <script>
+    window.onload = () => {
+      let stack = document.getElementById('stack');
+      for(let i = 0; i < 10; i++) {
+        let el = document.createElement('div');
+        el.style= 'border: 1px solid black; text-align: center; padding: 1rem;';
+        el.innerText = `Stacked Element ${i}`;
+        stack.appendChild(el);
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <h1 style='text-align: center;'>The stack layout</h1>
+  <pre style='border-left: 1px solid black; padding-left: 0px;'>
+    .stack > * + * {
+      margin-top: 1rem;
+    }
+  </pre>
+  <div id='stack' class='stack' style='border: 1px solid red;'>
+  </div>
+</body>
+</html>
